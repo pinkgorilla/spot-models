@@ -1,0 +1,22 @@
+{
+  "name": "spot-models",
+  "version": "1.0.0",
+  "description": "spot models",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pinkgorilla/spot-models.git"
+  },
+  "author": "Tris Setiawan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pinkgorilla/spot-models/issues"
+  },
+  "homepage": "https://github.com/pinkgorilla/spot-models#readme",
+  "dependencies": {
+    "capital-models": "git+https://git@github.com/pinkgorilla/capital-models.git"
+  }
+}
