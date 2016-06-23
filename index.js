@@ -1,4 +1,4 @@
-exports.OperationalHours = require("./src/operational-hours");
+exports.OperatingHours = require("./src/operating-hours");
 exports.SpotType = require('./src/spot-type');
 exports.Spot = require('./src/spot');
 exports.SpotComment = require('./src/spot-comment');

@@ -1,7 +1,8 @@
-'use strict'
+'use strict';
 
-var MongoModel = require('capital-models').MongoModel
-var OperationalHours = require('./operational-hours');
+var MongoModel = require('capital-models').MongoModel;
+var OperatingHours = require('./operating-hours');
+var SpotType = require('./spot-type');
 
 module.exports = class Spot extends MongoModel {
     constructor(source) {
@@ -10,14 +11,14 @@ module.exports = class Spot extends MongoModel {
         this.name = '';
         this.description = '';
         this.location = {};
-        this.operationalHours = new OperationalHours();
+        this.operatingHours = new OperatingHours();
         
         this.authorId = {};
         
         this.like = 0.0;
         this.dislike = 0.0;
         
-        this.type = {};
+        this.type = new SpotType();
         this.tags = [];
         
         this.comments = [];
