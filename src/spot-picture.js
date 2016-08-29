@@ -10,6 +10,7 @@ module.exports = class SpotPicture extends BaseModel {
         this.binary = [];
         this.date = new Date();
         this.authorId = {};
+        this.reports = [];
         this.spam = false;
         
         this.copy(source);
