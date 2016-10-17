@@ -17,10 +17,10 @@
   },
   "homepage": "https://github.com/pinkgorilla/spot-models#readme",
   "dependencies": {
-    "capital-models": "git+https://git@github.com/pinkgorilla/capital-models.git"
+    "capital-models": "git+https://git@github.com/pinkgorilla/capital-models.git",
+    "should": "^9.0.2"
   },
   "devDependencies": {
-    "mocha": "^2.5.3",
-    "should": "^9.0.2"
+    "mocha": "^2.5.3"
   }
 }
