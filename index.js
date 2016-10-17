@@ -1,14 +1,17 @@
-exports.OperatingHours = require("./src/operating-hours");
-exports.SpotType = require('./src/spot-type');
-exports.Spot = require('./src/spot');
-exports.SpotComment = require('./src/spot-comment');
-exports.SpotReport = require('./src/spot-report');
-exports.SpotPicture = require('./src/spot-picture');
-exports.validate = {
-    operatingHours: require('./src/operating-hours-validator'),
-    spotComment: require('./src/spot-comment-validator'),
-    spotPicture: require('./src/spot-picture-validator'),
-    spotReport: require('./src/spot-report-validator'),
-    spotType: require('./src/spot-type-validator'),
-    spot: require('./src/spot-validator')
-} 
+module.exports = {
+    auth: {
+        Account: require('./src/auth/account'),
+        Profile: require('./src/auth/profile'),
+        Role: require('./src/auth/role')
+    },
+    core: {
+        OperatingHours: require("./src/core/operating-hours"),
+        SpotType: require('./src/core/spot-type'),
+        Spot: require('./src/core/spot'),
+        SpotComment: require('./src/core/spot-comment'),
+        SpotReport: require('./src/core/spot-report'),
+        SpotPicture: require('./src/core/spot-picture'),
+    },
+    map: require('./src/map'),
+    validator: require('./src/validator')
+}
