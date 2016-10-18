@@ -10,9 +10,11 @@ module.exports = class Account extends BaseModel {
         // Define properties.  
         this.username = '';
         this.password = '';
+        this.email = '';
         this.isLocked = false;
         this.profile = new Profile();
         this.roles = [];
+        this.facebook = {};
 
         this.copy(source);
     }

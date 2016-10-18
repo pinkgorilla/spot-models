@@ -13,6 +13,9 @@ module.exports = function(data) {
     data.should.have.property('password');
     data.password.should.instanceof(String);
 
+    data.should.have.property('email');
+    data.email.should.instanceof(String);
+    
     data.should.have.property('isLocked');
     data.isLocked.should.instanceof(Boolean);
 
@@ -24,5 +27,9 @@ module.exports = function(data) {
 
     data.should.have.property('profile');
     data.profile.should.instanceof(Object);
+    
+    data.should.have.property('facebook');
+    data.facebook.should.instanceof(Object);
+    
     validateProfile(data.profile);
 };
