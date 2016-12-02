@@ -39,18 +39,21 @@ var validateSpot = function(spot) {
 
     spot.should.have.property("comments");
     spot.comments.should.instanceof(Array);
-    for (var comment of spot.comments)
+    for (var comment of spot.comments) {
         validateSpotComment(comment);
+    }
 
     spot.should.have.property("photos");
     spot.photos.should.instanceof(Array);
-    for (var photo of spot.photos)
+    for (var photo of spot.photos) {
         validateSpotPicture(photo);
+    }
 
     spot.should.have.property("reports");
     spot.reports.should.instanceof(Array);
-    for (var report of spot.reports)
+    for (var report of spot.reports) {
         validateSpotReport(report);
+    }
 
     spot.should.have.property("spam");
     spot.spam.should.be.Boolean();

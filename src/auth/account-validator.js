@@ -22,7 +22,9 @@ module.exports = function(data) {
     data.should.have.property("roles");
     data.roles.should.instanceof(Array);
     for (var role of data.roles)
+    {
         validateRole(role);
+    }
 
 
     data.should.have.property("profile");

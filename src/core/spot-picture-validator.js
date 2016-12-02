@@ -19,9 +19,10 @@ var validateSpotPicture = function(picture) {
 
     picture.should.have.property("reports");
     picture.reports.should.instanceof(Array);
-    for (var report of picture.reports)
+    for (var report of picture.reports) {
         validateSpotReport(report);
-        
+    }
+
     picture.should.have.property("spam");
     picture.spam.should.be.Boolean();
 };

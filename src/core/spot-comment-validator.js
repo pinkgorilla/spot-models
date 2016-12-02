@@ -19,16 +19,17 @@ var validateSpotComment = function(comment) {
 
     comment.should.have.property("replies");
     comment.replies.should.instanceof(Array);
-    for (var reply of comment.replies)
+    for (var reply of comment.replies) {
         validateSpotComment(reply);
+    }
 
     comment.should.have.property("reports");
     comment.reports.should.instanceof(Array);
-    for (var report of comment.reports)
+    for (var report of comment.reports) {
         validateSpotReport(report);
-
+    }
     comment.should.have.property("spam");
     comment.spam.should.be.Boolean();
 };
- 
+
 module.exports = validateSpotComment;
