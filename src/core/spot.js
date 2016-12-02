@@ -12,21 +12,22 @@ module.exports = class Spot extends BaseModel {
         this.description = "";
         this.location = {};
         this.operatingHours = new OperatingHours();
-        
+
         this.authorId = {};
-        
+
         this.like = 0.0;
         this.dislike = 0.0;
-        
-        this.type = new SpotType();
+
+        this.spotTypeId = {};
+        this.spotType = new SpotType();
         this.tags = [];
-        
+
         this.comments = [];
         this.photos = [];
-        
+
         this.reports = [];
         this.spam = false;
-        
+
         this.copy(source);
     }
 };

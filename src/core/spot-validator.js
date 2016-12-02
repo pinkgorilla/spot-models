@@ -30,9 +30,12 @@ var validateSpot = function(spot) {
     spot.should.have.property("dislike");
     spot.dislike.should.be.Number();
 
-    spot.should.have.property("type");
-    spot.type.should.instanceof(Object);
-    validateSpotType(spot.type);
+    spot.should.have.property("spotTypeId");
+    spot.spotTypeId.should.instanceof(Object);
+    
+    spot.should.have.property("spotType");
+    spot.spotType.should.instanceof(Object);
+    validateSpotType(spot.spotType);
 
     spot.should.have.property("tags");
     spot.tags.should.instanceof(Array);
