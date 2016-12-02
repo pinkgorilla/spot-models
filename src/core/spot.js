@@ -1,15 +1,15 @@
-'use strict';
+"use strict";
 
-var BaseModel = require('capital-models').BaseModel;
-var OperatingHours = require('./operating-hours');
-var SpotType = require('./spot-type');
+var BaseModel = require("capital-models").BaseModel;
+var OperatingHours = require("./operating-hours");
+var SpotType = require("./spot-type");
 
 module.exports = class Spot extends BaseModel {
     constructor(source) {
-        super('1.0.0', 'spot');
+        super("1.0.0", "spot");
 
-        this.name = '';
-        this.description = '';
+        this.name = "";
+        this.description = "";
         this.location = {};
         this.operatingHours = new OperatingHours();
         
@@ -29,4 +29,4 @@ module.exports = class Spot extends BaseModel {
         
         this.copy(source);
     }
-}
+};

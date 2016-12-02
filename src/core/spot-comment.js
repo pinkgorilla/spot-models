@@ -1,14 +1,14 @@
-'use strict';
+"use strict";
 
-var BaseModel = require('capital-models').BaseModel
+var BaseModel = require("capital-models").BaseModel;
 
 module.exports = class SpotComment extends BaseModel {
     constructor(source) {
-        super('1.0.0', 'spot-comment');
+        super("1.0.0", "spot-comment");
 
-        this.title = '';
+        this.title = "";
         this.date = new Date();
-        this.comment = '';
+        this.comment = "";
         this.authorId = {};
         this.replies = [];
         
@@ -17,4 +17,4 @@ module.exports = class SpotComment extends BaseModel {
         
         this.copy(source);
     }
-}
+};

@@ -1,8 +1,8 @@
 var test = function(name, path) {
     describe(name, function() {
         require(path);
-    })
-}
+    });
+};
 
-test('@auth', './auth-test');
-test('@core', './core-test');
+test("@auth", "./auth-test");
+test("@core", "./core-test");
