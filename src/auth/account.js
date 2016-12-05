@@ -17,5 +17,6 @@ module.exports = class Account extends BaseModel {
         this.facebook = {};
 
         this.copy(source);
+        this.profile = new Profile(this.profile);
     }
 };
