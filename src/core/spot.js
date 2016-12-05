@@ -1,6 +1,6 @@
 "use strict";
 
-var BaseModel = require("capital-models").BaseModel;
+var BaseModel = require("model-toolkit").BaseModel;
 var OperatingHours = require("./operating-hours");
 var SpotType = require("./spot-type");
 

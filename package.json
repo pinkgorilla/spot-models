@@ -19,8 +19,7 @@
     "url": "https://github.com/pinkgorilla/spot-models/issues"
   },
   "homepage": "https://github.com/pinkgorilla/spot-models#readme",
-  "dependencies": {
-    "capital-models": "git+https://git@github.com/pinkgorilla/capital-models.git",
+  "dependencies": { 
     "should": "^11.1.1"
   },
   "devDependencies": {
